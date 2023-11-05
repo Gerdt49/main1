@@ -7,14 +7,10 @@ import java.time.LocalDate;
 public interface Album {
     boolean addPhoto (Photo photo);
     boolean removePhoto(int photoId, int albumId);
-
-    boolean updatePhoto(int photoId, int albumId,String url);
-
+    boolean updatePhoto(int photoId, int albumId, String url);
     Photo getPhotoFromAlbum(int photoId, int albumId);
-    Photo[]  getAlPhotoFromAlbum(int albumId);
+    Photo[] getAllPhotoFromAlbum(int albumId);
     Photo[] getPhotoBetweenDate(LocalDate dateFrom, LocalDate dateTo);
-    int size();
-
-
+    int size(); // quantity of photos in all albums
 
 }
