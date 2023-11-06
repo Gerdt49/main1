@@ -94,6 +94,7 @@ class AlbumImplTest {
 
     @Test
     void sizeTest() {
+
         assertEquals(6, album.size());
     }
 }

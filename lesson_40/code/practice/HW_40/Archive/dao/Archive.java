@@ -1,8 +1,9 @@
-package practice.HW_40.Documents.dao;
+package practice.HW_40.Archive.dao;
 
-import practice.HW_40.Documents.Documents;
+import practice.HW_40.Archive.Documents;
 
 import javax.swing.text.Document;
+import java.time.LocalDate;
 
 public interface Archive {
     /*boolean addPhoto (Photo photo);
@@ -21,7 +22,12 @@ public interface Archive {
 
     Document getDocumentFromArchive(int folderId, int documentId);
 
-    Document[] getAlDocumentFromArchive(int documentId);
+    Document[] getAllDocumentFromArchive(int documentId);
+
+    Document[] getAllDocumentBetweenDate(LocalDate dateFrom, LocalDate dateTo);
+
+    int size();
+
 //    Document[] get
 
 

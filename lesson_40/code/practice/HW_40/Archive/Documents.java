@@ -1,5 +1,6 @@
-package practice.HW_40.Documents;
+package practice.HW_40.Archive;
 
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class Documents implements Comparable<Documents>{
@@ -10,7 +11,7 @@ public class Documents implements Comparable<Documents>{
      private String Url;
     private String DateDocument;
 
-    public Documents(int folderId, int documentId, String name, String url, String dateDocument) {
+    public Documents(int folderId, int documentId, String name, String url, LocalDateTime dateDocument) {
         this.folderId = folderId;
         this.documentId = documentId;
         this.name = name;
